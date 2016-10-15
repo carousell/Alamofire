@@ -231,6 +231,8 @@
 		4CFCFE3C1D56E8D900A76388 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCFE381D56E8D900A76388 /* TaskDelegate.swift */; };
 		4DD67C241A5C58FB00ED2280 /* Alamofire.h in Headers */ = {isa = PBXBuildFile; fileRef = F8111E3819A95C8B0040E7D1 /* Alamofire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DD67C251A5C590000ED2280 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F897FF4019AA800700AB5182 /* Alamofire.swift */; };
+		7D079A341DB2689700A8920A /* MetaDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D079A331DB2689700A8920A /* MetaDataResponse.swift */; };
+		7D079A361DB26AA900A8920A /* MetaDataResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D079A351DB26AA900A8920A /* MetaDataResponseSerialization.swift */; };
 		8035DB621BAB492500466CB3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8111E3319A95C8B0040E7D1 /* Alamofire.framework */; };
 		E4202FD01B667AA100C997FB /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2724E1AF88FB500F1D59A /* ParameterEncoding.swift */; };
 		E4202FD11B667AA100C997FB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE2C391AF899EC00BABAE5 /* Request.swift */; };
@@ -348,6 +350,8 @@
 		4CFCFE381D56E8D900A76388 /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
 		4DD67C0B1A5C55C900ED2280 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72998D721BF26173006D3F69 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		7D079A331DB2689700A8920A /* MetaDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaDataResponse.swift; sourceTree = "<group>"; };
+		7D079A351DB26AA900A8920A /* MetaDataResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaDataResponseSerialization.swift; sourceTree = "<group>"; };
 		B39E2F831C1A72F8002DA1A9 /* certDER.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = certDER.cer; path = selfSignedAndMalformedCerts/certDER.cer; sourceTree = "<group>"; };
 		B39E2F841C1A72F8002DA1A9 /* certDER.crt */ = {isa = PBXFileReference; lastKnownFileType = file; name = certDER.crt; path = selfSignedAndMalformedCerts/certDER.crt; sourceTree = "<group>"; };
 		B39E2F851C1A72F8002DA1A9 /* certDER.der */ = {isa = PBXFileReference; lastKnownFileType = file; name = certDER.der; path = selfSignedAndMalformedCerts/certDER.der; sourceTree = "<group>"; };
@@ -650,6 +654,15 @@
 			path = String;
 			sourceTree = "<group>";
 		};
+		7D079A321DB2686800A8920A /* Carousell */ = {
+			isa = PBXGroup;
+			children = (
+				7D079A331DB2689700A8920A /* MetaDataResponse.swift */,
+				7D079A351DB26AA900A8920A /* MetaDataResponseSerialization.swift */,
+			);
+			name = Carousell;
+			sourceTree = "<group>";
+		};
 		B39E2F821C1A72E5002DA1A9 /* Varying Encoding Types and Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -693,6 +706,7 @@
 		F8111E3519A95C8B0040E7D1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				7D079A321DB2686800A8920A /* Carousell */,
 				F897FF4019AA800700AB5182 /* Alamofire.swift */,
 				4CDE2C481AF8A14A00BABAE5 /* Core */,
 				4C4366991D7BB92700C38AAD /* Extensions */,
@@ -1242,9 +1256,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C574E6A1C67D207000B3128 /* Timeline.swift in Sources */,
+				7D079A341DB2689700A8920A /* MetaDataResponse.swift in Sources */,
 				4CFCFE2E1D56D31700A76388 /* SessionDelegate.swift in Sources */,
 				4CE2724F1AF88FB500F1D59A /* ParameterEncoding.swift in Sources */,
 				4CDE2C3A1AF899EC00BABAE5 /* Request.swift in Sources */,
+				7D079A361DB26AA900A8920A /* MetaDataResponseSerialization.swift in Sources */,
 				4CDE2C461AF89FF300BABAE5 /* ResponseSerialization.swift in Sources */,
 				4C1DC8541B68908E00476DE3 /* AFError.swift in Sources */,
 				4CDE2C371AF8932A00BABAE5 /* SessionManager.swift in Sources */,
